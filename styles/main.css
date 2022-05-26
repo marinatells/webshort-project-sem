@@ -1,0 +1,48 @@
+main {
+}
+
+.system article {
+	text-align: center;
+}
+
+.system div {
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+
+	display: inline-block;
+	margin: 0 10px;
+
+	/* включает систему координат 0, 0 */
+	position: relative;
+}
+
+.system img {
+	height: 200px;
+	/* относительно ситемы координат div */
+	position: absolute;
+	left: -90px;
+}
+
+.system p {
+	/* относительно ситемы координат div */
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+
+	text-align: center;
+	margin: 0;
+
+	opacity: 0;
+	transition: 500ms;
+}
+
+.system div:hover p {
+	opacity: 1;
+	/* transform: translate(0, -10px); */
+}
+
+.system .space1 {
+	left: -112px;
+}

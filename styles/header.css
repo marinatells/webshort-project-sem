@@ -1,0 +1,56 @@
+/* header */
+
+body {
+	font-family: "Arial";
+	background-color: #ddd;
+	margin: 0;
+}
+
+header {
+	color: #eee;
+	background-color: #333;
+	background-image: url(../pics/parallax.jpg);
+	background-attachment: fixed;
+	background-size: 100%;
+
+	padding: 50px;
+}
+
+h1 {
+	text-align: right;
+	margin: 0;
+}
+
+nav {
+	text-align: right;
+	margin: 0;
+	margin-top: 50px;
+}
+
+/* вложенный селектор */
+nav a {
+	display: inline-block;
+	padding: 10px;
+
+	text-decoration: none;
+	color: inherit;
+	border-radius: 20px;
+	background-color: #000;
+	border: 2px solid #ddd;
+	margin-left: 20px;
+	margin-top: 20px;
+
+	transition: 2s;
+}
+
+nav a img {
+	width: 20px;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	transition: 1s;
+}
+
+nav a:hover img {
+	transform: scale(1.5);
+}
